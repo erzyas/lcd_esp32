@@ -137,7 +137,7 @@ void create_circular_scale(lv_obj_t* parent) {
     
     // Убираем основные и второстепенные деления для чистоты (опционально)
     lv_meter_set_scale_ticks(meter, scale, 0, 0, 0, lv_color_black()); // Без делений
-    lv_meter_set_scale_major_ticks(meter, scale, 0, 0, 0, lv_color_black(),2); // Без основных делений
+    lv_meter_set_scale_major_ticks(meter, scale, 0, 0, 0, lv_color_black(), 0); // Без основных делений
     
     // Добавляем индикатор типа дуга (ARC)
     indic = lv_meter_add_arc(meter, scale, 15, lv_palette_main(LV_PALETTE_BLUE), 0); // Толщина 15, синий цвет
